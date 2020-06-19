@@ -16,9 +16,17 @@ function myFunction() {
 }
 myFunction();
 
-// Explanation: 
+// Explanation: nestedFunction is basically a child of the the parent myFunction which means that it can inherit from the parent but the parent can't inherit from child.
 
 
 /* Task 2: Counter */
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+function summation (num) {
+  let sum = 0
+  for(let i = 1; i <= 4; i++){
+  sum += i
+  }
+  return sum
+  }
+summation(4)
